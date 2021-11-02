@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--Used https://coffeesaplings.carrd.co/ as reference-->
+<html>
+    <head>
+        <title>Selma's To-Do Carrd</title>
+        <link href="file:///Users/SelmaMesanovic/Downloads/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:700,700italic,400,400italic" rel="stylesheet" type="text/css">
+<style> 
+body { 
+  font-family: "Quicksand", normal;
+}
+</style>
+    </head>
+    <body class="is-ready">
+     <body bgcolor="#E6E6FA">
+        <div id="wrapper">
+            <div id="main">
+                <div class="inner">
+                    <ul id="buttons01" class="buttons">
+                        <li>
+                            <a href="#" class="button n01">weekly</a>
+                        </li>
+                        <li>
+                            <a href="https://ko-fi.com/anh_bizbunny" class="button n02">daily</a>
+                        </li>
+                    </ul>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  min-width: 400px;
+
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+
+/* Remove margins and padding from the list */
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove border and padding from the buttons */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ol li {
+  cursor: pointer;
+  position: relative;
+  padding: 8px 8px 8px 25px;
+  list-style-type: circle;
+  background: #7B68EE;
+  font-size: 16px;
+  transition: 0.2s;
+  border-radius: 15px;
+  color: #FFFFFF;
+  text-align: center;
+
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ol li:nth-child(odd) {
+  background: #7B68EE;
+}
+
+/* Darker background-color on hover */
+ol li:hover {
+  background: #FFC0CB;
+}
+
+/* When clicked on, add a background color and strike out text */
+ol li.checked {
+  background: #FFC0CB;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ol li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0px 0px 0px 0px;
+}
+
+.close:hover {
+  background-color: #FFC0CB;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #7B68EE;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+  border-radius: 10px; 
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 11px;
+  width: 25%;
+  background: #FFC0CB;
+  color: #000000;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #FFC0CB;
+}
+</style>
+</head>
+<body>
+
+<div id="myDIV" class="header">
+  <h2 style="margin:2px">my to-do list</h2>
+  <input type="text" id="myInput" placeholder="Task...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ol id="myOL">
+  <li>complete japanese homework</li>
+  <li class="checked">start coding assessment</li>
+  <li>clean room</li>
+  <li>take time to read</li>
+  <li>prepare for tmrw's class</li>
+  <li>reorganise shelves</li>
+</ol>
+
+<script>
+
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ol');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+
+
+<iframe src="https://open.spotify.com/embed/playlist/1AR8erQgGxAOgv3LBbADfj" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+</body>
+</html>
+
+                    <p id="credits">
+                        <a href="#">(made with visual studio code )</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
